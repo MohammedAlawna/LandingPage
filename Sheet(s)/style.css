@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  background: rgb(0, 145, 255);
+  background: #f5f5f5;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@
   /*Nesting Styles with SASS*/
 }
 .navbar .navLogo {
-  color: rgb(71, 71, 71);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: 768px) {
   .navbar_bars {
-    color: rgb(71, 71, 71);
+    color: rgb(0, 0, 0);
     opacity: 1;
     position: absolute;
     top: 22px;
@@ -48,13 +48,13 @@
   }
 }
 .navbar .navMenu--links {
-  color: white;
+  color: rgb(49, 49, 49);
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
 }
 .navbar .navMenu--links:hover {
-  color: rgb(236, 165, 0);
+  color: #009f38;
   transition: all 0.3 ease;
 }
 
@@ -62,4 +62,97 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/*Main Styling*/
+.main {
+  background-color: #fff;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+.mainContainer--left {
+  width: 100%;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .mainContainer--left {
+    padding: 5rem 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  .mainContainer--left {
+    line-height: 1.5;
+  }
+}
+.mainContainer--left h1 {
+  font-size: 4rem;
+  color: #009f38;
+}
+@media screen and (max-width: 280px) {
+  .mainContainer--left h1 {
+    font-size: 1.5rem;
+  }
+}
+.mainContainer--left h2 {
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 280px) {
+  .mainContainer--left h2 {
+    font-size: 2rem;
+  }
+}
+.mainContainer--btn {
+  background-color: #009f38;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+}
+.mainContainer--btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+.mainContainer--btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(0, 145, 255);
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+.mainContainer--btn:hover:after {
+  width: 100%;
+}
+.mainContainer--img {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
