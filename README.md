@@ -7,9 +7,10 @@
 
 # Technologies
 - VSCode.
-- HTMLL.
+- HTML.
 - SASS.
 - SASS Live Compiler, integrated inside VSCode.
+- Live Server, integrated inside VSCode.
 
 # Screenshots
 -Wide Screen (PC..)
