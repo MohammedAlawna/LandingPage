@@ -39,4 +39,26 @@
       font-size: 2rem;
     }
   }
+  .navMenu {
+    @extend %align;
+    list-style: none;
+    text-align: center;
+    margin-right: 2px;
+
+    @include tablet {
+      display: none; /*Hide in tablet width*/
+    }
+
+    &--links {
+      color: white;
+      @extend %align;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+      &:hover {
+        color: $gold;
+        transition: all 0.3 ease;
+      }
+    }
+  }
 }

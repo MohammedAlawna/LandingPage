@@ -1,6 +1,6 @@
 /*Mobile Responsiveness*/
 /*Pre-Defined Data Template*/
-.navbar .navLogo {
+.navbar .navMenu--links, .navbar .navMenu, .navbar .navLogo {
   display: flex;
   align-items: center;
 }
@@ -35,6 +35,27 @@
     right: 20px;
     font-size: 2rem;
   }
+}
+.navbar .navMenu {
+  list-style: none;
+  text-align: center;
+  margin-right: 2px;
+}
+@media screen and (max-width: 768px) {
+  .navbar .navMenu {
+    display: none;
+    /*Hide in tablet width*/
+  }
+}
+.navbar .navMenu--links {
+  color: white;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.navbar .navMenu--links:hover {
+  color: rgb(236, 165, 0);
+  transition: all 0.3 ease;
 }
 
 * {
