@@ -1,4 +1,6 @@
-p {
-  display: flex;
-  justify-content: center;
+@import "navbar";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

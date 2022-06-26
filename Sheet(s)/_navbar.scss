@@ -1,0 +1,42 @@
+@import "colors";
+@import "media-queries";
+
+/*Pre-Defined Data Template*/
+%align {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background: $royalblue;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2); /*Make the navbar responsive*/
+  z-index: 10;
+  position: relative;
+
+  /*Nesting Styles with SASS*/
+  .navLogo {
+    color: $dark;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 24px;
+    @extend %align;
+  }
+
+  &_bars {
+    opacity: 0;
+    @include mobile {
+    }
+    @include tablet {
+      color: $dark;
+      opacity: 1;
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      font-size: 2rem;
+    }
+  }
+}
