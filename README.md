@@ -1,6 +1,6 @@
 # LandingPage
 # Preface
- - This is a landing page created for a An-Najah Medical Co. using HTML, SAS..
+ - This is a landing page created for a An-Najah Medical Co. using HTML, SASS..
  - It is a futural landing papge the can be cutsomized for differenct clients, companies upon their request. 
  - They can also ask for adding another pages like cart, pay, etc.. which serve as an eCommerce system.
  - The website is responsive for all resolutions. 
